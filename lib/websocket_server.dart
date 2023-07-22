@@ -14,7 +14,7 @@ void execute() {
   var shelfHandler = const shelf.Pipeline().addHandler(handler);
 
   // Create and start the server.
-  var port = 8081;
+  var port = 8080;
   io.serve(shelfHandler, InternetAddress.anyIPv4, port).then((server) {
     print('Serving at ws://${server.address.host}:${server.port}');
   });
